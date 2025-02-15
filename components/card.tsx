@@ -87,7 +87,7 @@ function matchesAllFilters(repo: Repository, filterTags: string[]) {
 const RepoGrid = ({ repos, filterTags }: IRepoGrid) => {
   const shownRepos = useMemo(() => {
     return repos.filter((repo: Repository) =>
-      matchesAllFilters(repo, filterTags)
+      matchesAllFilters(repo, filterTags),
     );
   }, [repos, filterTags]);
   if (shownRepos.length === 0) {
