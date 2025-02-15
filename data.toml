@@ -3,6 +3,7 @@ ignored = [
   "purarue/HPI-fork",
   "purarue/RSA",
   "purarue/Second-Brain",
+  "purarue/SnekStudio",
   "purarue/advent-of-code-2019",
   "purarue/advent-of-code-2020",
   "purarue/albums_old",
