@@ -12,20 +12,20 @@
     "prod-server": "PREFIX='/projects' next start"
   },
   "dependencies": {
-    "@tabler/icons-react": "^2.39.0",
-    "next": "^14.2.15",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@tabler/icons-react": "^3.30.0",
+    "next": "^15.1.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "sharp": "^0.32.6",
+    "sharp": "^0.33.5",
     "toml": "^3.0.0"
   },
   "devDependencies": {
-    "@types/node": "^17.0.36",
-    "@types/react": "^18.0.9",
-    "eslint": "8.16.0",
-    "eslint-config-next": "12.1.6",
-    "typescript": "^4.7.2"
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.8",
+    "eslint": "9.20.1",
+    "eslint-config-next": "15.1.7",
+    "typescript": "^5.7.3"
   }
 }
