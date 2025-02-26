@@ -20,6 +20,7 @@
     "csharp": true,
     "dart": true,
     "database": false,
+    "date": false,
     "discord": false,
     "dlang": true,
     "dotfiles": false,

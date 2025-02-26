@@ -1393,3 +1393,15 @@ language = "Python"
 priority = 2
 score = 0
 url = "https://pypi.org/project/abook-parser/"
+
+["purarue/dateq"]
+name = "dateq"
+full_name = "purarue/dateq"
+html_url = "https://github.com/purarue/dateq"
+description = "a command line date/time processor"
+updated_at = "2025-02-22T09:10:02Z"
+tags = ["cli-tool", "date"]
+language = "Python"
+priority = 2
+score = 0
+url = "https://pypi.org/project/dateq/"
