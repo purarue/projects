@@ -6,7 +6,7 @@ Live at [purarue.xyz/projects](https://purarue.xyz/projects)
 
 The metadata from the github API helps me determine project ordering.
 
-This is served on a different base path (`/projects`) in production, with `yarn prod-build && yarn prod-server`, with `nginx` like:
+This is served on a different base path (`/projects`) in production, with `npm run prod-build && npm run prod-server`, with `nginx` like:
 
 ```nginx
 location /projects/ {

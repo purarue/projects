@@ -34,8 +34,8 @@ while getopts ':hds' opt; do
 done
 
 ./update &&
-	yarn lint &&
-	yarn build &&
+	npm run lint &&
+	npm run build &&
 	sync_images &&
 	git add . &&
 	commit "$@" &&
