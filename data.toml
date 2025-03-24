@@ -356,7 +356,7 @@ html_url = "https://github.com/purarue/HPI"
 description = "Human Programming Interface. Provides a way to unify, access and interact with all my personal data, as a `python` package. [Currently in-use modules](https://github.com/purarue/HPI#my-modules)"
 language = "Python"
 priority = 2
-score = 50
+score = 0
 img = "/hpi.png"
 tags = ["hpi", "python", "cli-tool", "todotxt", "mpv"]
 
