@@ -109,7 +109,7 @@ priority = 2
 score = 0
 url = "https://purarue.xyz/mal_unapproved"
 img = "/mal_unapproved.png"
-tags = ["anime", "api", "database", "web", "webscraping"]
+tags = ["anime", "api", "database", "web", "webscraping", "elixir"]
 
 ["purarue/albums"]
 name = "albums"
