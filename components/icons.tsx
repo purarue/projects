@@ -46,7 +46,7 @@ const FooterIcon = React.memo(
         </div>
       </a>
     );
-  }
+  },
 );
 
 FooterIcon.displayName = "Footer Icon";

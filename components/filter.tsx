@@ -16,7 +16,7 @@ interface IFilterSelect {
 export function updateFilters(
   tagName: string,
   add: boolean,
-  setFilters: React.Dispatch<React.SetStateAction<string[]>>
+  setFilters: React.Dispatch<React.SetStateAction<string[]>>,
 ) {
   setFilters((oldState: string[]) => {
     if (add) {
@@ -88,7 +88,7 @@ const FilterBox = React.memo(
         <div className={styles.filterCount}>{tag.count}</div>
       </div>
     );
-  }
+  },
 );
 
 FilterBox.displayName = "FilterBox";

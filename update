@@ -12,7 +12,7 @@ import shutil
 import shlex
 import subprocess
 from itertools import chain
-from typing import List, Dict, Set, Any, Tuple, Optional
+from typing import Any, Optional
 from pathlib import Path
 
 import toml
@@ -20,7 +20,7 @@ import requests
 import click
 
 Json = Any
-RepoDB = Dict[str, Json]
+RepoDB = dict[str, Json]
 
 this_dir: Path = Path(__file__).absolute().parent
 rate_limit_remaining: int | None = None
@@ -56,8 +56,8 @@ def _save_rate_limit(resp: requests.Response) -> Optional[int]:
 # downloads new repository data if needed,
 # returns the parsed JSON data
 def get_repository_data(
-    *, cachefile: Path, github_username: str, unowned: List[str]
-) -> List[Json]:
+    *, cachefile: Path, github_username: str, unowned: list[str]
+) -> list[Json]:
     if not cached_response_has_expired(cachefile=cachefile):
         try:
             data = json.loads(cachefile.read_text())
@@ -106,9 +106,9 @@ def get_repository_data(
 
 
 # return all data from the data.toml file
-def load_data(*, datafile: Path) -> Tuple[Set[str], RepoDB]:
-    repos: Dict[str, Json] = {}
-    ignored: Set[str] = set()
+def load_data(*, datafile: Path) -> tuple[set[str], RepoDB]:
+    repos: dict[str, Json] = {}
+    ignored: set[str] = set()
     if not datafile.exists():
         return ignored, repos
     with datafile.open("r") as df:
@@ -121,10 +121,10 @@ def load_data(*, datafile: Path) -> Tuple[Set[str], RepoDB]:
     return ignored, repos
 
 
-TOPICS: Set[str] = set()
+TOPICS: set[str] = set()
 
 
-def _prompt_tags(name: str) -> List[str]:
+def _prompt_tags(name: str) -> list[str]:
     from prompt_toolkit import prompt
     from prompt_toolkit.completion import WordCompleter
 
@@ -138,7 +138,7 @@ def _prompt_tags(name: str) -> List[str]:
     return tags
 
 
-def _sort_tags(tags: List[str]) -> List[str]:
+def _sort_tags(tags: list[str]) -> list[str]:
     return list(sorted(set(tags)))
 
 
@@ -155,7 +155,7 @@ def _sort_tags(tags: List[str]) -> List[str]:
 
 
 # prompt me to add any new items
-def prompt_new(repo_info: List[Json], repo_data: RepoDB, ignored: Set[str]) -> RepoDB:
+def prompt_new(repo_info: list[Json], repo_data: RepoDB, ignored: set[str]) -> RepoDB:
     for info in repo_info:
         for topic in info.get("topics", []):
             if topic:
@@ -207,7 +207,7 @@ def prompt_new(repo_info: List[Json], repo_data: RepoDB, ignored: Set[str]) -> R
     return repo_data
 
 
-def classify_tags(tag_data: Dict[str, bool], *, tags: Set[str]) -> Dict[str, bool]:
+def classify_tags(tag_data: dict[str, bool], *, tags: set[str]) -> dict[str, bool]:
     for tag in tags:
         if tag not in tag_data:
             click.echo(f"Is {tag} a language? [y/n] ", nl=False)
@@ -254,7 +254,7 @@ def main(
     use_cachefile: Path, use_datafile: Path, lang_file: Path, use_github_username: str
 ) -> None:
     ignored, repo_data = load_data(datafile=use_datafile)
-    repo_info: List[Dict] = get_repository_data(
+    repo_info: list[dict] = get_repository_data(
         cachefile=use_cachefile,
         github_username=use_github_username,
         unowned=[r for r in repo_data if not r.startswith(use_github_username)],

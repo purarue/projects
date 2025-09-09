@@ -43,10 +43,7 @@ export default function Home({ repos, tags }: IHome) {
     <div className={styles.container}>
       <Head>
         <title>purarue | Projects</title>
-        <meta
-          name="description"
-          content="A list of purarue's Projects"
-        />
+        <meta name="description" content="A list of purarue's Projects" />
       </Head>
       <Header />
       <FilterSelect tags={tags} filters={filters} setFilters={setFilters} />

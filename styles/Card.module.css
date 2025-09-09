@@ -10,7 +10,9 @@
   color: inherit;
   border: 1px solid #eaeaea;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
 }
 
 .card:hover {
@@ -119,7 +121,9 @@
   margin-right: 1rem;
   border-bottom: 1px solid #eaeaea;
   padding: 2px 0px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
 }
 
 .cardFooter a:hover {

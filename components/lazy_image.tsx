@@ -14,7 +14,7 @@ const LazyImage = React.memo(({ src, name }: ILazyImage) => {
         <div className={styles.lazyImageContainer}>
           <Image
             style={{
-              objectFit: "contain"
+              objectFit: "contain",
             }}
             src={src}
             alt={name}
