@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect } from "react";
 
 import styles from "../styles/Home.module.css";
 
@@ -39,6 +39,23 @@ interface IHome {
 
 export default function Home({ repos, tags }: IHome) {
   const [filters, setFilters] = React.useState<string[]>([]);
+
+  // get tag from url, like #neovim,lua if present
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const urlTags = hash.replace("#", "").split(",");
+      setFilters(urlTags);
+    }
+  }, []);
+
+  useEffect(() => {
+    // sync to url
+    const currentHash = window.location.hash;
+    const hash = `#${filters.join(",")}`;
+    window.history.replaceState(null, "", window.location.pathname + hash);
+  }, [filters]);
+
   return (
     <div className={styles.container}>
       <Head>
