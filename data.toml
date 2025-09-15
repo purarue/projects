@@ -6,6 +6,7 @@ ignored = [
   "purarue/SnekStudio",
   "purarue/Swapstats",
   "purarue/XLSXCellFormatting",
+  "purarue/abook.vim",
   "purarue/advent-of-code-2019",
   "purarue/advent-of-code-2020",
   "purarue/albums_old",
@@ -1360,10 +1361,10 @@ language = "Python"
 priority = 2
 score = 0
 
-["purarue/tree-sitter-rifleconfig"]
-name = "tree-sitter-rifleconfig"
-full_name = "purarue/tree-sitter-rifleconfig"
-html_url = "https://github.com/purarue/tree-sitter-rifleconfig"
+["purarue/tree-sitter-rifleconf"]
+name = "tree-sitter-rifleconf"
+full_name = "purarue/tree-sitter-rifleconf"
+html_url = "https://github.com/purarue/tree-sitter-rifleconf"
 description = "`rifle` ([`ranger`](https://github.com/ranger/ranger/) filemanager file opener) grammar for [`tree-sitter`](https://tree-sitter.github.io/tree-sitter/)"
 updated_at = "2024-06-06T04:17:07Z"
 tags = ["javascript", "lisp", "parser-generator", "scheme", "vim"]
@@ -1407,3 +1408,15 @@ language = "Python"
 priority = 2
 score = 0
 url = "https://pypi.org/project/dateq/"
+
+["purarue/abookrc.vim"]
+name = "abookrc.vim"
+full_name = "purarue/abookrc.vim"
+html_url = "https://github.com/purarue/abookrc.vim"
+description = "Syntax highlighting for [`abook`](https://abook.sourceforge.io/)'s configuration file"
+updated_at = "2025-09-15T01:46:17Z"
+tags = ["neovim"]
+language = "Vim Script"
+priority = 2
+score = 0
+img = "/abookrc.png"
