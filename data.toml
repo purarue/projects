@@ -60,6 +60,7 @@ ignored = [
   "purarue/montage-timeline",
   "purarue/mutt-wizard",
   "purarue/nvim-treesitter",
+  "purarue/nvim-treesitter-textobjects",
   "purarue/nvim-ts-autotag",
   "purarue/nvim-ts-context-commentstring",
   "purarue/okayweather",
@@ -1420,3 +1421,14 @@ language = "Vim Script"
 priority = 2
 score = 0
 img = "/abookrc.png"
+
+["purarue/auto-mkview.nvim"]
+name = "auto-mkview.nvim"
+full_name = "purarue/auto-mkview.nvim"
+html_url = "https://github.com/purarue/auto-mkview.nvim"
+description = "automatically save and restore window views in nvim"
+updated_at = "2025-09-28T00:38:49Z"
+tags = ["lua", "neovim"]
+language = "Lua"
+priority = 2
+score = 0
