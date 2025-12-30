@@ -1432,3 +1432,14 @@ tags = ["lua", "neovim"]
 language = "Lua"
 priority = 2
 score = 0
+
+["purarue/sigal-gallery-scripts"]
+name = "sigal-gallery-scripts"
+full_name = "purarue/sigal-gallery-scripts"
+html_url = "https://github.com/purarue/sigal-gallery-scripts"
+description = "scripts I use to sync images to share with people, using [`sigal`](https://github.com/saimn/sigal)"
+updated_at = "2025-12-29T03:39:09Z"
+tags = []
+language = "Python"
+priority = 2
+score = 0
