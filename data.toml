@@ -1443,3 +1443,14 @@ tags = ["cli-tool", "web"]
 language = "Python"
 priority = 2
 score = 0
+
+["purarue/qute-script-manager"]
+name = "qute-script-manager"
+full_name = "purarue/qute-script-manager"
+html_url = "https://github.com/purarue/qute-script-manager"
+description = "a basic [qutebrowser](https://github.com/qutebrowser/qutebrowser) userscript manager"
+updated_at = "2026-01-04T00:45:16Z"
+tags = ["cli-tool", "dotfiles"]
+language = "Python"
+priority = 2
+score = 0
