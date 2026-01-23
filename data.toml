@@ -1284,3 +1284,14 @@ tags = [ "cli-tool", "dotfiles",]
 language = "Python"
 priority = 2
 score = 0
+
+["purarue/pipx_isolate"]
+name = "pipx_isolate"
+full_name = "purarue/pipx_isolate"
+html_url = "https://github.com/purarue/pipx_isolate"
+description = "a pipx script installer supporting inline script metadata for python scripts"
+updated_at = "2026-01-20T23:29:22Z"
+tags = [ "cli-tool", "installer", "python",]
+language = "Python"
+priority = 2
+score = 0
