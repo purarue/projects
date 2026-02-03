@@ -822,7 +822,7 @@ priority = 2
 score = 0
 url = "https://purarue.xyz/feed/"
 img = "/my_feed.png"
-tags = [ "api", "caching", "hpi", "media", "python", "server", "web",]
+tags = [ "api", "caching", "hpi", "media", "python", "server", "web", "golang",]
 
 ["purarue/HPI-personal"]
 name = "HPI-personal"
